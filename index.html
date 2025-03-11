@@ -63,6 +63,19 @@
             color: #333333;
             margin: 0;
         }
+
+        .expériences {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .expériences h3 {
+            color: #333333;
+            margin: 0;
+        }
     </style>
 </head>
 
@@ -93,26 +106,19 @@
 </body>
 
 <script>
-    // parse cv.json
-    fetch('https://raw.githubusercontent.com/MrGozXD/YannisCV/main/cv.json')
+
+    // parse the whole json to make a whole CV
+    fetch('https://api.github.com/repos/MrGozXD/YannisCV/contents/cv.json')
         .then(response => response.json())
         .then(data => {
-            // create a new div element
-            const newDiv = document.createElement("div");
-            newDiv.innerHTML = "<h2>Expériences</h2>";
-            // append the new div element to the body
-            document.body.appendChild(newDiv);
-            // loop through the data
-            data.experiences.forEach(experience => {
-                // create a new div element
-                const newDiv = document.createElement("div");
-                newDiv.innerHTML = "<h3>" + experience.title + "</h3>";
-                newDiv.innerHTML += "<p>" + experience.date + "</p>";
-                newDiv.innerHTML += "<p>" + experience.description + "</p>";
-                // append the new div element to the body
-                document.body.appendChild(newDiv);
-            });
+            console.log(data);
+            // decode the base64 content of the file, it has accents
+            let cv = JSON.parse(atob(data.content));
+            console.log(cv);
+
         });
+
+
 </script>
 
 </html>
