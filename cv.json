@@ -7,7 +7,7 @@
             "phone": "0651690685",
             "linkedin": "Yannis Peloutier",
             "location": "Lyon",
-            "language": "Français",
+            "language": "Fran\u00e7ais",
             "age": 25
         },
         "technical_skills": {
@@ -47,9 +47,9 @@
             ]
         },
         "interpersonal_skills": [
-            "Travail en équipe",
-            "Adaptabilité",
-            "Curiosité"
+            "Travail en \u00e9quipe",
+            "Adaptabilit\u00e9",
+            "Curiosit\u00e9"
         ],
         "languages_spoken": {
             "english": {
@@ -60,82 +60,82 @@
             "spanish": "Notions"
         },
         "interests": [
-            "Jeux vidéo et JDR",
-            "Esport (organisation de LANs et compétitions)"
+            "Jeux vid\u00e9o et JDR",
+            "Esport (organisation de LANs et comp\u00e9titions)"
         ],
         "degrees_and_education": [
             {
-                "degree": "Diplôme d'Ingénieur",
-                "institution": "Ecole Nationale Supérieure de l'Electronique et de ses Applications, Cergy",
-                "specialization": "Traitement du signal et développement logiciel",
+                "degree": "Dipl\u00f4me d'Ing\u00e9nieur",
+                "institution": "Ecole Nationale Sup\u00e9rieure de l'Electronique et de ses Applications, Cergy",
+                "specialization": "Traitement du signal et d\u00e9veloppement logiciel",
                 "period": "2020-2024",
                 "activities": [
-                    "Président du Bureau des Arts",
-                    "DSI et Responsable communication de la junior entreprise de l'école, Junior ENSEA"
+                    "Pr\u00e9sident du Bureau des Arts",
+                    "DSI et Responsable communication de la junior entreprise de l'\u00e9cole, Junior ENSEA"
                 ]
             },
             {
                 "degree": "MSc Interactive Media",
                 "institution": "University College Cork, Cork, Ireland",
-                "specialization": "Réalité virtuelle et UX/UI design",
+                "specialization": "R\u00e9alit\u00e9 virtuelle et UX/UI design",
                 "period": "2023-2024",
                 "thesis": "Eye Tracking in Virtual Reality: A Proof of Concept for Assessing Autism Spectrum Disorders in Forensic Settings"
             },
             {
-                "degree": "DUT Génie Electrique et Informatique Industrielle",
+                "degree": "DUT G\u00e9nie Electrique et Informatique Industrielle",
                 "institution": "IUT d'Angers, Angers",
-                "specialization": "Réseaux",
+                "specialization": "R\u00e9seaux",
                 "period": "2018-2020",
                 "activities": [
-                    "Organisateur et animateur du tournoi de robotique du département GEII de l'IUT"
+                    "Organisateur et animateur du tournoi de robotique du d\u00e9partement GEII de l'IUT"
                 ]
             }
         ],
         "professional_experience": [
             {
-                "position": "Stagiaire assistant ingénieur développement logiciel",
-                "company": "AEGLE informatique médicale, Cergy",
-                "period": "mai 2023 - août 2023",
+                "position": "Stagiaire assistant ing\u00e9nieur d\u00e9veloppement logiciel",
+                "company": "AEGLE informatique m\u00e9dicale, Cergy",
+                "period": "mai 2023 - ao\u00fbt 2023",
                 "projects": [
-                    "Réalisation d'un Proof Of Concept d'une solution d'enregistrement de vidéos mobile",
-                    "Déploiement d'un serveur WebRTC",
-                    "Recherche d'une solution de live vidéo"
+                    "R\u00e9alisation d'un Proof Of Concept d'une solution d'enregistrement de vid\u00e9os mobile",
+                    "D\u00e9ploiement d'un serveur WebRTC",
+                    "Recherche d'une solution de live vid\u00e9o"
                 ]
             },
             {
-                "position": "Stagiaire développeur web",
+                "position": "Stagiaire d\u00e9veloppeur web",
                 "company": "Elephant Films, Nanterre",
                 "period": "juin 2022 - septembre 2022",
                 "projects": [
-                    "Développement du catalogue de la société avec React"
+                    "D\u00e9veloppement du catalogue de la soci\u00e9t\u00e9 avec React"
                 ]
             },
             {
-                "position": "Stagiaire informatique embarquée",
+                "position": "Stagiaire informatique embarqu\u00e9e",
                 "company": "GEMA-LIFE, Ivry-sur-Seine",
-                "period": "juin 2021 - août 2021",
+                "period": "juin 2021 - ao\u00fbt 2021",
                 "projects": [
-                    "Développement sur STM32",
-                    "Conception et réalisation d'un contrôleur moteur et d'un capteur Time-Of-Flight"
+                    "D\u00e9veloppement sur STM32",
+                    "Conception et r\u00e9alisation d'un contr\u00f4leur moteur et d'un capteur Time-Of-Flight"
                 ]
             }
         ],
         "projects": [
             {
-                "title": "Projet de fin d'études MSc",
-                "description": "Développement d'une solution VR basée sur l'eyetracking pour l'évaluation du Trouble du Spectre Autistique sur Unreal Engine et Meta Quest Pro, en collaboration avec l'asile Broadmoor (UK)"
+                "title": "Projet de fin d'\u00e9tudes MSc",
+                "description": "D\u00e9veloppement d'une solution VR bas\u00e9e sur l'eyetracking pour l'\u00e9valuation du Trouble du Spectre Autistique sur Unreal Engine et Meta Quest Pro, en collaboration avec l'asile Broadmoor (UK)"
             },
             {
                 "title": "Projet 2A ENSEA",
-                "description": "Développement d'un calendrier à l'usage des étudiants et professeurs de l'école (Next.js, API REST, MongoDB, Docker)"
+                "description": "D\u00e9veloppement d'un calendrier \u00e0 l'usage des \u00e9tudiants et professeurs de l'\u00e9cole (Next.js, API REST, MongoDB, Docker)"
             },
             {
                 "title": "Projet informatique DUT",
-                "description": "Reinforcement learning pour une IA de jeu de société en Python et JavaScript"
+                "description": "Reinforcement learning pour une IA de jeu de soci\u00e9t\u00e9 en Python et JavaScript"
             },
             {
-                "title": "Projet réseaux DUT",
-                "description": "Plateforme de jeux en ligne développée en PHP/JavaScript et hébergée sur Raspberry Pi"
+                "title": "Projet r\u00e9seaux DUT",
+                "description": "Plateforme de jeux en ligne d\u00e9velopp\u00e9e en PHP/JavaScript et h\u00e9berg\u00e9e sur Raspberry Pi"
             }
         ]
     },
