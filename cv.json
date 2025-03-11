@@ -80,7 +80,18 @@
                 "institution": "University College Cork, Cork, Ireland",
                 "specialization": "R\u00e9alit\u00e9 virtuelle et UX/UI design",
                 "period": "2023-2024",
-                "activities": "Eye Tracking in Virtual Reality: A Proof of Concept for Assessing Autism Spectrum Disorders in Forensic Settings"
+                "activities": [
+                    "Eye Tracking in Virtual Reality: A Proof of Concept for Assessing Autism Spectrum Disorders in Forensic Settings"
+                ]
+            },
+            {
+                "degree": "MSc Interactive Media",
+                "institution": "University College Cork, Cork, Ireland",
+                "specialization": "Réalité virtuelle et UX/UI design",
+                "period": "2023-2024",
+                "activities": [
+                    "<a href=\"https://github.com/MrGozXD/YannisCV/raw/main/Peloutier_Yannis_Thesis_compressed.pdf\" target=\"_blank\">Projet de fin d'\u00e9tudes : Eye Tracking in Virtual Reality: A Proof of Concept for Assessing Autism Spectrum Disorders in Forensic Settings</a>"
+                ]
             },
             {
                 "degree": "DUT G\u00e9nie Electrique et Informatique Industrielle",
