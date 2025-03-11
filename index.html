@@ -22,7 +22,7 @@
 
         .contact-info h2 {
             margin-bottom: 10px;
-            color: #333333;
+
         }
 
         .contact-info p {
@@ -31,6 +31,7 @@
         }
 
         .cv {
+            margin-bottom: 20px;
             background-color: #ffffff;
             padding: 20px;
             border-radius: 8px;
@@ -39,7 +40,7 @@
 
         .cv h2 {
             margin-bottom: 10px;
-            color: #333333;
+
         }
 
         .cv a {
@@ -51,7 +52,7 @@
             text-decoration: underline;
         }
 
-        .presentation {
+        .introduction {
             background-color: #ffffff;
             padding: 20px;
             border-radius: 8px;
@@ -59,12 +60,12 @@
             margin-bottom: 20px;
         }
 
-        .presentation h3 {
+        .introduction h3 {
             color: #333333;
             margin: 0;
         }
 
-        .expériences {
+        .studies {
             background-color: #ffffff;
             padding: 20px;
             border-radius: 8px;
@@ -72,36 +73,62 @@
             margin-bottom: 20px;
         }
 
-        .expériences h3 {
+
+        .studies h4 {
+            color: #a600ff
+        }
+
+        .professional_experience {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .professional_experience h3 {
             color: #333333;
             margin: 0;
+        }
+
+        .professional_experience h4 {
+            color: #a600ff
+        }
+
+        .link {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .link h2 {
+            margin-bottom: 10px;
+            color: #333333;
+        }
+
+        .link img {
+            width: 100%;
+
+            height: auto;
         }
     </style>
 </head>
 
 <body>
-    <div class="presentation">
-        <h2>Présentation</h2>
-        <h3>Bonjour, je m'appelle Yannis Peloutier. <br>
-            Ingénieur diplômé de l'ENSEA et titulaire d'un MSc en Interactive Media de l'University
-            College Cork (Irlande), je suis actuellement à la recherche de mon premier emploi dans le génie logiciel.
-            Grâce
-            à plusieurs stages et projets, j'ai acquis une solide maîtrise de nombreuses technologies
-            et un vif intérêt pour l'innovation. Je souhaite désormais mettre mes compétences au
-            service de projets concrets et motivants.
-        </h3>
-    </div>
-    <div class="contact-info">
-        <h2>Contact</h2>
-        <p><strong>Nom:</strong> Peloutier</p>
-        <p><strong>Prénom:</strong> Yannis</p>
-        <p><strong>Téléphone:</strong> 06 51 69 06 85</p>
-        <p><strong>Email: </strong><a href="mailto:yannis.peloutier@ensea.fr">yannis.peloutier@ensea.fr</a></p>
-    </div>
+    <div class="introduction"></div>
+    <div class="contact-info"></div>
+    <div class="studies"></div>
+    <div class="professional_experience"></div>
     <div class="cv">
         <h2>Curriculum Vitae</h2>
-        <p><a href="https://github.com/MrGozXD/YannisCV/raw/main/CVPeloutierYannis_compressed.pdf"
+        <p><a href="https://github.com/MrGozXD/YannisCV/raw/main/CV_2025_Yannis_Peloutier_compressed.pdf"
                 target="_blank">Téléchargez mon CV (PDF)</a></p>
+    </div>
+    <div class="link">
+        <h2>Liens</h2>
+        <img src="https://github.com/MrGozXD/YannisCV/raw/main/QRCodeLink.png" alt="QRCodeLink">
     </div>
 </body>
 
@@ -111,10 +138,125 @@
     fetch('https://api.github.com/repos/MrGozXD/YannisCV/contents/cv.json')
         .then(response => response.json())
         .then(data => {
-            console.log(data);
-            // decode the base64 content of the file, it has accents
-            let cv = JSON.parse(atob(data.content));
-            console.log(cv);
+            let cvJSON = JSON.parse(atob(data.content));
+
+            let cvFrench = cvJSON.french;
+            let cvEnglish = cvJSON.english;
+
+            // create the introduction div
+            let presentation = document.querySelector('.introduction');
+            let presentationTitle = document.createElement('h2');
+            presentationTitle.textContent = 'Présentation';
+            presentation.appendChild(presentationTitle);
+            let presentationText = document.createElement('h3');
+            presentationText.innerHTML = cvFrench.introduction;
+            presentation.appendChild(presentationText);
+
+            // create the contact info div
+            let contactInfo = document.querySelector('.contact-info');
+            let contactInfoTitle = document.createElement('h2');
+            contactInfoTitle.textContent = 'Contact';
+            contactInfo.appendChild(contactInfoTitle);
+
+            let contactInfoLinkedin = document.createElement('p');
+            contactInfoLinkedin.innerHTML = '<b>Linkedin:</b> <a href="' + cvFrench.contact.linkedin + '">' + 'Yannis PELOUTIER' + '</a>';
+            contactInfo.appendChild(contactInfoLinkedin);
+
+            let contactInfoPhone = document.createElement('p');
+            contactInfoPhone.innerHTML = '<b>Téléphone:</b> ' + cvFrench.contact.phone;
+            contactInfo.appendChild(contactInfoPhone);
+
+            let contactInfoEmail = document.createElement('p');
+            contactInfoEmail.innerHTML = '<b>Email: </b><a href="mailto:yannis.peloutier@ensea.fr">yannis.peloutier@ensea.fr</a>'
+            contactInfo.appendChild(contactInfoEmail);
+
+            // create the studies div
+            let studies = document.querySelector('.studies');
+            let studiesTitle = document.createElement('h2');
+            studiesTitle.textContent = 'Etudes';
+            studies.appendChild(studiesTitle);
+
+            let studiesText = document.createElement('h3');
+            // loop through degrees_and_education object that contains those fields : degree, institution, specialization, period, activities
+            cvFrench.degrees_and_education.forEach(element => {
+                let studyEntry = document.createElement('div');
+                studyEntry.classList.add('study-entry');
+
+                let degreeTitle = document.createElement('h4');
+                degreeTitle.innerHTML = element.degree;
+                studyEntry.appendChild(degreeTitle);
+
+                let institution = document.createElement('p');
+                institution.classList.add('institution');
+                institution.innerHTML = '<b>' + element.institution + '</b>';
+                let periodSpan = document.createElement('span');
+                periodSpan.classList.add('period');
+                periodSpan.innerHTML = element.period;
+                periodSpan.style.float = 'right';
+                institution.appendChild(periodSpan);
+                studyEntry.appendChild(institution);
+
+                let specialization = document.createElement('p');
+                specialization.classList.add('specialization');
+                specialization.innerHTML = 'Spécialisation: ' + element.specialization;
+                studyEntry.appendChild(specialization);
+
+                let activities = document.createElement('p');
+                activities.classList.add('activities');
+                activities.innerHTML = element.activities;
+                studyEntry.appendChild(activities);
+
+                studies.appendChild(studyEntry);
+            });
+            studies.appendChild(studiesText);
+
+            // create the professional experience div
+            let professionalExperience = document.querySelector('.professional_experience');
+            let professionalExperienceTitle = document.createElement('h2');
+            professionalExperienceTitle.textContent = 'Expérience professionnelle';
+            professionalExperience.appendChild(professionalExperienceTitle);
+
+            let professionalExperienceText = document.createElement('h3');
+            // loop through professional_experience object that contains those fields : position, company, period, projects
+            cvFrench.professional_experience.forEach(element => {
+                let experienceEntry = document.createElement('div');
+                experienceEntry.classList.add('experience-entry');
+
+                let positionTitle = document.createElement('h4');
+                positionTitle.innerHTML = element.position;
+                experienceEntry.appendChild(positionTitle);
+
+                let company = document.createElement('p');
+                company.classList.add('company');
+                company.innerHTML = '<b>' + element.company + '</b>';
+                let periodSpan = document.createElement('span');
+                periodSpan.classList.add('period');
+                periodSpan.innerHTML = element.period;
+                periodSpan.style.float = 'right';
+                company.appendChild(periodSpan);
+                experienceEntry.appendChild(company);
+
+                let projects = document.createElement('div');
+                projects.classList.add('projects');
+
+                if (Array.isArray(element.projects)) {
+                    let projectsList = document.createElement('ul');
+                    element.projects.forEach(project => {
+                        let projectItem = document.createElement('li');
+                        projectItem.innerHTML = project;
+                        projectsList.appendChild(projectItem);
+                    });
+                    projects.appendChild(projectsList);
+                } else {
+                    projects.innerHTML = element.projects;
+                }
+
+                experienceEntry.appendChild(projects);
+
+                professionalExperience.appendChild(experienceEntry);
+            });
+
+            professionalExperience.appendChild(professionalExperienceText);
 
         });
 
