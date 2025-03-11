@@ -92,4 +92,27 @@
     </div>
 </body>
 
+<script>
+    // parse cv.json
+    fetch('https://raw.githubusercontent.com/MrGozXD/YannisCV/main/cv.json')
+        .then(response => response.json())
+        .then(data => {
+            // create a new div element
+            const newDiv = document.createElement("div");
+            newDiv.innerHTML = "<h2>Expériences</h2>";
+            // append the new div element to the body
+            document.body.appendChild(newDiv);
+            // loop through the data
+            data.experiences.forEach(experience => {
+                // create a new div element
+                const newDiv = document.createElement("div");
+                newDiv.innerHTML = "<h3>" + experience.title + "</h3>";
+                newDiv.innerHTML += "<p>" + experience.date + "</p>";
+                newDiv.innerHTML += "<p>" + experience.description + "</p>";
+                // append the new div element to the body
+                document.body.appendChild(newDiv);
+            });
+        });
+</script>
+
 </html>
