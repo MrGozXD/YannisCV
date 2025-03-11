@@ -1,140 +1,282 @@
 {
-    "nom": "Yannis PELOUTIER",
-    "titre": "Ingénieur logiciel",
-    "contact": {
-        "email": "yannis.peloutier@yahoo.fr",
-        "téléphone": "0651690685",
-        "linkedin": "Yannis Peloutier",
-        "localisation": "Lyon",
-        "langue": "Français",
-        "âge": 25
-    },
-    "compétences_techniques": {
-        "langages": [
-            "C",
-            "C++",
-            "Java",
-            "JavaScript/TypeScript",
-            "Python",
-            "PHP",
-            "UE Blueprints"
-        ],
-        "systèmes_embarqués": [
-            "STM32",
-            "Raspberry Pi"
-        ],
-        "développement_mobile": {
-            "natif_et_web": [
-                "Android Java/Kotlin",
-                "iOS Swift",
-                "React Native",
-                "PWA"
-            ],
-            "backend": [
-                "Nodejs",
-                "Django"
-            ],
-            "frontend": [
-                "React",
-                "Three.js"
-            ],
-            "ux_ui_design": true
+    "french": {
+        "name": "Yannis PELOUTIER",
+        "title": "Premier emploi Ingénieur logiciel",
+        "contact": {
+            "email": "yannis.peloutier@yahoo.fr",
+            "phone": "0651690685",
+            "linkedin": "Yannis Peloutier",
+            "location": "Lyon",
+            "language": "Français",
+            "age": 25
         },
-        "réalité_virtuelle": [
-            "Unreal Engine 5",
-            "OpenXR"
+        "technical_skills": {
+            "languages": [
+                "C",
+                "C++",
+                "Java",
+                "JavaScript/TypeScript",
+                "Python",
+                "PHP",
+                "UE Blueprints"
+            ],
+            "embedded_systems": [
+                "STM32",
+                "Raspberry Pi"
+            ],
+            "mobile_development": {
+                "native_and_web": [
+                    "Android Java/Kotlin",
+                    "iOS Swift",
+                    "React Native",
+                    "PWA"
+                ],
+                "backend": [
+                    "Nodejs",
+                    "Django"
+                ],
+                "frontend": [
+                    "React",
+                    "Three.js"
+                ],
+                "ux_ui_design": true
+            },
+            "virtual_reality": [
+                "Unreal Engine 5",
+                "OpenXR"
+            ]
+        },
+        "interpersonal_skills": [
+            "Travail en équipe",
+            "Adaptabilité",
+            "Curiosité"
+        ],
+        "languages_spoken": {
+            "english": {
+                "level": "C1",
+                "experience": "1 an en Irlande",
+                "toeic_score": "950/990"
+            },
+            "spanish": "Notions"
+        },
+        "interests": [
+            "Jeux vidéo et JDR",
+            "Esport (organisation de LANs et compétitions)"
+        ],
+        "degrees_and_education": [
+            {
+                "degree": "Diplôme d'Ingénieur",
+                "institution": "Ecole Nationale Supérieure de l'Electronique et de ses Applications, Cergy",
+                "specialization": "Traitement du signal et développement logiciel",
+                "period": "2020-2024",
+                "activities": [
+                    "Président du Bureau des Arts",
+                    "DSI et Responsable communication de la junior entreprise de l'école, Junior ENSEA"
+                ]
+            },
+            {
+                "degree": "MSc Interactive Media",
+                "institution": "University College Cork, Cork, Ireland",
+                "specialization": "Réalité virtuelle et UX/UI design",
+                "period": "2023-2024",
+                "thesis": "Eye Tracking in Virtual Reality: A Proof of Concept for Assessing Autism Spectrum Disorders in Forensic Settings"
+            },
+            {
+                "degree": "DUT Génie Electrique et Informatique Industrielle",
+                "institution": "IUT d'Angers, Angers",
+                "specialization": "Réseaux",
+                "period": "2018-2020",
+                "activities": [
+                    "Organisateur et animateur du tournoi de robotique du département GEII de l'IUT"
+                ]
+            }
+        ],
+        "professional_experience": [
+            {
+                "position": "Stagiaire assistant ingénieur développement logiciel",
+                "company": "AEGLE informatique médicale, Cergy",
+                "period": "mai 2023 - août 2023",
+                "projects": [
+                    "Réalisation d'un Proof Of Concept d'une solution d'enregistrement de vidéos mobile",
+                    "Déploiement d'un serveur WebRTC",
+                    "Recherche d'une solution de live vidéo"
+                ]
+            },
+            {
+                "position": "Stagiaire développeur web",
+                "company": "Elephant Films, Nanterre",
+                "period": "juin 2022 - septembre 2022",
+                "projects": [
+                    "Développement du catalogue de la société avec React"
+                ]
+            },
+            {
+                "position": "Stagiaire informatique embarquée",
+                "company": "GEMA-LIFE, Ivry-sur-Seine",
+                "period": "juin 2021 - août 2021",
+                "projects": [
+                    "Développement sur STM32",
+                    "Conception et réalisation d'un contrôleur moteur et d'un capteur Time-Of-Flight"
+                ]
+            }
+        ],
+        "projects": [
+            {
+                "title": "Projet de fin d'études MSc",
+                "description": "Développement d'une solution VR basée sur l'eyetracking pour l'évaluation du Trouble du Spectre Autistique sur Unreal Engine et Meta Quest Pro, en collaboration avec l'asile Broadmoor (UK)"
+            },
+            {
+                "title": "Projet 2A ENSEA",
+                "description": "Développement d'un calendrier à l'usage des étudiants et professeurs de l'école (Next.js, API REST, MongoDB, Docker)"
+            },
+            {
+                "title": "Projet informatique DUT",
+                "description": "Reinforcement learning pour une IA de jeu de société en Python et JavaScript"
+            },
+            {
+                "title": "Projet réseaux DUT",
+                "description": "Plateforme de jeux en ligne développée en PHP/JavaScript et hébergée sur Raspberry Pi"
+            }
         ]
     },
-    "compétences_interpersonnelles": [
-        "Travail en équipe",
-        "Adaptabilité",
-        "Curiosité"
-    ],
-    "langues": {
-        "anglais": {
-            "niveau": "C1",
-            "expérience": "1 an en Irlande",
-            "score_toeic": "950/990"
+    "english": {
+        "name": "Yannis PELOUTIER",
+        "title": "Software Engineer",
+        "contact": {
+            "email": "yannis.peloutier@yahoo.fr",
+            "phone": "0651690685",
+            "linkedin": "Yannis Peloutier",
+            "location": "Lyon",
+            "nationality": "French",
+            "age": 26
         },
-        "espagnol": "Notions"
-    },
-    "centres_d_intérêt": [
-        "Jeux vidéo et JDR",
-        "Esport (organisation de LANs et compétitions)"
-    ],
-    "diplômes_et_formations": [
-        {
-            "diplôme": "Diplôme d'Ingénieur",
-            "établissement": "Ecole Nationale Supérieure de l'Electronique et de ses Applications, Cergy",
-            "spécialisation": "Traitement du signal et développement logiciel",
-            "période": "2020-2024",
-            "activités": [
-                "Président du Bureau des Arts",
-                "DSI et Responsable communication de la junior entreprise de l'école, Junior ENSEA"
+        "technical_skills": {
+            "languages": [
+                "C",
+                "C++",
+                "Java",
+                "JavaScript/TypeScript",
+                "Python",
+                "PHP",
+                "UE Blueprints"
+            ],
+            "embedded_systems": [
+                "STM32",
+                "Raspberry Pi"
+            ],
+            "mobile_development": {
+                "native_and_web": [
+                    "Android Java/Kotlin",
+                    "iOS Swift",
+                    "React Native",
+                    "PWA"
+                ],
+                "backend": [
+                    "Nodejs",
+                    "Django"
+                ],
+                "frontend": [
+                    "React",
+                    "Three.js"
+                ],
+                "ux_ui_design": true
+            },
+            "virtual_reality": [
+                "Unreal Engine 5",
+                "OpenXR"
             ]
         },
-        {
-            "diplôme": "MSc Interactive Media",
-            "établissement": "University College Cork, Cork, Ireland",
-            "spécialisation": "Réalité virtuelle et UX/UI design",
-            "période": "2023-2024",
-            "mémoire": "Eye Tracking in Virtual Reality: A Proof of Concept for Assessing Autism Spectrum Disorders in Forensic Settings"
+        "interpersonal_skills": [
+            "Teamwork",
+            "Adaptability",
+            "Curiosity"
+        ],
+        "languages_spoken": {
+            "english": {
+                "level": "C1",
+                "experience": "1 year in Ireland",
+                "toeic_score": "950/990"
+            },
+            "spanish": "Basic knowledge"
         },
-        {
-            "diplôme": "DUT Génie Electrique et Informatique Industrielle",
-            "établissement": "IUT d'Angers, Angers",
-            "spécialisation": "Réseaux",
-            "période": "2018-2020",
-            "activités": [
-                "Organisateur et animateur du tournoi de robotique du département GEII de l'IUT"
-            ]
-        }
-    ],
-    "expérience_professionnelle": [
-        {
-            "poste": "Stagiaire assistant ingénieur développement logiciel",
-            "entreprise": "AEGLE informatique médicale, Cergy",
-            "période": "mai 2023 - août 2023",
-            "projets": [
-                "Réalisation d'un Proof Of Concept d'une solution d'enregistrement de vidéos mobile",
-                "Déploiement d'un serveur WebRTC",
-                "Recherche d'une solution de live vidéo"
-            ]
-        },
-        {
-            "poste": "Stagiaire développeur web",
-            "entreprise": "Elephant Films, Nanterre",
-            "période": "juin 2022 - septembre 2022",
-            "projets": [
-                "Développement du catalogue de la société avec React"
-            ]
-        },
-        {
-            "poste": "Stagiaire informatique embarquée",
-            "entreprise": "GEMA-LIFE, Ivry-sur-Seine",
-            "période": "juin 2021 - août 2021",
-            "projets": [
-                "Développement sur STM32",
-                "Conception et réalisation d'un contrôleur moteur et d'un capteur Time-Of-Flight"
-            ]
-        }
-    ],
-    "projets": [
-        {
-            "titre": "Projet de fin d'études MSc",
-            "description": "Développement d'une solution VR basée sur l'eyetracking pour l'évaluation du Trouble du Spectre Autistique sur Unreal Engine et Meta Quest Pro, en collaboration avec l'asile Broadmoor (UK)"
-        },
-        {
-            "titre": "Projet 2A ENSEA",
-            "description": "Développement d'un calendrier à l'usage des étudiants et professeurs de l'école (Next.js, API REST, MongoDB, Docker)"
-        },
-        {
-            "titre": "Projet informatique DUT",
-            "description": "Reinforcement learning pour une IA de jeu de société en Python et JavaScript"
-        },
-        {
-            "titre": "Projet réseaux DUT",
-            "description": "Plateforme de jeux en ligne développée en PHP/JavaScript et hébergée sur Raspberry Pi"
-        }
-    ]
+        "interests": [
+            "Video games and RPGs",
+            "Esports (organizing LANs and competitions)"
+        ],
+        "degrees_and_education": [
+            {
+                "degree": "Engineering Degree",
+                "institution": "Ecole Nationale Supérieure de l'Electronique et de ses Applications, Cergy",
+                "specialization": "Signal processing and software development",
+                "period": "2020-2024",
+                "activities": [
+                    "President of the Arts Office",
+                    "CTO and Communications Manager of the school's junior enterprise, Junior ENSEA"
+                ]
+            },
+            {
+                "degree": "MSc Interactive Media",
+                "institution": "University College Cork, Cork, Ireland",
+                "specialization": "Virtual reality and UX/UI design",
+                "period": "2023-2024",
+                "thesis": "Eye Tracking in Virtual Reality: A Proof of Concept for Assessing Autism Spectrum Disorders in Forensic Settings"
+            },
+            {
+                "degree": "DUT in Electrical Engineering and Industrial Computing",
+                "institution": "IUT d'Angers, Angers",
+                "specialization": "Networks",
+                "period": "2018-2020",
+                "activities": [
+                    "Organizer and host of the robotics tournament for the GEII department of the IUT"
+                ]
+            }
+        ],
+        "professional_experience": [
+            {
+                "position": "Software Development Engineer Intern",
+                "company": "AEGLE informatique médicale, Cergy",
+                "period": "May 2023 - August 2023",
+                "projects": [
+                    "Development of a Proof Of Concept for a mobile video recording solution",
+                    "Deployment of a WebRTC server",
+                    "Research on a live video solution"
+                ]
+            },
+            {
+                "position": "Web Developer Intern",
+                "company": "Elephant Films, Nanterre",
+                "period": "June 2022 - September 2022",
+                "projects": [
+                    "Development of the company's catalog with React"
+                ]
+            },
+            {
+                "position": "Embedded Systems Intern",
+                "company": "GEMA-LIFE, Ivry-sur-Seine",
+                "period": "June 2021 - August 2021",
+                "projects": [
+                    "Development on STM32",
+                    "Design and realization of a motor controller and a Time-Of-Flight sensor"
+                ]
+            }
+        ],
+        "projects": [
+            {
+                "title": "MSc Final Project",
+                "description": "Development of a VR solution based on eyetracking for the assessment of Autism Spectrum Disorder on Unreal Engine and Meta Quest Pro, in collaboration with Broadmoor Hospital (UK)"
+            },
+            {
+                "title": "ENSEA 2A Project",
+                "description": "Development of a calendar for students and teachers of the school (Next.js, REST API, MongoDB, Docker)"
+            },
+            {
+                "title": "DUT Computer Science Project",
+                "description": "Reinforcement learning for a board game AI in Python and JavaScript"
+            },
+            {
+                "title": "DUT Networks Project",
+                "description": "Online gaming platform developed in PHP/JavaScript and hosted on Raspberry Pi"
+            }
+        ]
+    }
 }
